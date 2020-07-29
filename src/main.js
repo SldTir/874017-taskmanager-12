@@ -36,7 +36,7 @@ const createSiteMenuTemplate = () => {
 };
 
 const createFilterTemplate = () => {
-    return (
+  return (
       `<section class="main__filter filter container">
         <input
           type="radio"
@@ -96,11 +96,11 @@ const createFilterTemplate = () => {
           >Archive <span class="filter__archive-count">115</span></label
         >
       </section>`
-    );
-  };
+  );
+};
   
-  const createBoardTemplate = () => {
-    return (
+const createBoardTemplate = () => {
+  return (
       `<section class="board container">
         <div class="board__filter-list">
           <a href="#" class="board__filter">SORT BY DEFAULT</a>
@@ -109,11 +109,11 @@ const createFilterTemplate = () => {
         </div>
         <div class="board__tasks"></div>
       </section>`
-    );
-  };
+  );
+};
   
-  const createTaskTemplate = () => {
-    return (
+const createTaskTemplate = () => {
+  return (
       `<article class="card card--black">
         <div class="card__form">
           <div class="card__inner">
@@ -153,11 +153,11 @@ const createFilterTemplate = () => {
           </div>
         </div>
       </article>`
-    );
-  };
+  );
+};
   
-  const createTaskEditTemplate = () => {
-    return (
+const createTaskEditTemplate = () => {
+  return (
       `<article class="card card--edit card--yellow card--repeat">
         <form class="card__form" method="get">
           <div class="card__inner">
@@ -348,14 +348,14 @@ const createFilterTemplate = () => {
           </div>
         </form>
       </article>`
-    );
-  };
+  );
+};
   
-  const createLoadMoreButtonTemplate = () => {
-    return (
+const createLoadMoreButtonTemplate = () => {
+  return (
       `<button class="load-more" type="button">load more</button>`
-    );
-  };
+  );
+};
 
 const render = (container, template, place) => {
   container.insertAdjacentHTML(place, template);
